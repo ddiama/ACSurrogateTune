@@ -10,6 +10,10 @@ A repository for hyperparameter tuning using Keras tuner for the creation of a s
 ## Dependencies
 Python 3, TensorFlow, keras_tuner, numpy, matplotlib, pandas, scikit-learn
 
+## Notes 
+To monitor the results during training, Tensorboard can be used with the following command:
+tensorboard --logdir=random_search/tb1_logs
+
 ## Import libraries
 This section includes the necessary Python libraries for the project, including TensorFlow, Keras, and data preprocessing tools.
 
