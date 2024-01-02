@@ -6,7 +6,6 @@
 ##############################
 # Import libraries
 ##############################
-
 # General libraries
 import numpy as np
 import matplotlib.pyplot as plt
@@ -63,18 +62,15 @@ upper_bound = Q3 + 1.5 * IQR
 # Filter the data to exclude outliers
 concatenated_data_no_outliers = concatenated_data[~((concatenated_data < lower_bound) | (concatenated_data > upper_bound)).any(axis=1)]
 
-# Split the dataset between inputs (X) and outputs (y)
+# Split the dataset between features (X) and targets (y)
 X = concatenated_data_no_outliers.drop(['Unnamed: 0'], axis = 1).iloc[:,:9]
 y = concatenated_data_no_outliers.drop(['Unnamed: 0'], axis = 1)[['MTOW', "Block_fuel", "El_energy", "Block_energy"]]
 
-df_x = X.values
-df_y = y.values
-
 x_scaler = StandardScaler()
-x_scaled = x_scaler.fit_transform(df_x)
+x_scaled = x_scaler.fit_transform(X.values)
 
 y_scaler = MinMaxScaler()
-y_scaled = y_scaler.fit_transform(df_y)
+y_scaled = y_scaler.fit_transform(y.values)
 
 ##############################
 # Visualize sampling space
@@ -90,7 +86,7 @@ scatter_matrix.savefig(plot_filename)
 scatter_matrix = sns.pairplot(y, diag_kind='hist')
 scatter_matrix.fig.suptitle('Scatter Plot Matrix', y=1.02)
 
-plot_filename = f'plots//distribution//yscatter_plot.png'
+plot_filename = f'plots//yscatter_plot.png'
 scatter_matrix.savefig(plot_filename)
 
 ##############################
@@ -142,7 +138,6 @@ def build_model(hyperparams):
 
     return model
 
-
 ####################################
 # Callbacks
 ####################################
@@ -158,7 +153,6 @@ callback_checpoint = ModelCheckpoint(filepath=path_checkpoint,
 callback_early_stopping = EarlyStopping(monitor = 'val_loss',
                                        patience =60,
                                        verbose=1)
-
 
 # Callback for TensorBoard log during training
 tensorboard_log_dir = "./random_search/tb1_logs"
