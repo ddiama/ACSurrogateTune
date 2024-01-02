@@ -3,17 +3,10 @@
 ## Description
 A repository for hyperparameter tuning using Keras tuner for the creation of a surrogate model in the context of aircraft conceptual design.
 
-## Table of Contents
-- [Import libraries](#import-libraries)
-- [Load data](#load-data)
-- [Visualize sampling space](#visualize-sampling-space)
-- [Data preprocessing](#data-preprocessing)
-- [Define the NN and hyperparameters](#define-the-nn-and-hyperparameters)
-- [Callbacks](#callbacks)
-- [Run the hyperparameter search](#run-the-hyperparameter-search)
-- [Extract best hyperparameters and model](#extract-best-hyperparameters-and-model)
-- [Postprocessing](#postprocessing)
-
+## Authors
+- Jerol Soibam
+- Dimitra-Eirini Diamantidou
+  
 ## Dependencies
 - Python 3
 - TensorFlow
