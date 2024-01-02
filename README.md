@@ -26,7 +26,13 @@ Standardize and scale the data, and split it into training and testing sets.
 Define the neural network architecture and hyperparameters for the Keras tuner.
 
 ## Callbacks
-Configure callbacks, including checkpoints, early stopping, TensorBoard logging, and learning rate adjustment.
+Configure callbacks to enhance the model's performance and efficiency during the training process. Additional care was taken by introducing key callbacks:
+
+- **ModelCheckpoint:** Save the model's weights whenever there is an improvement in validation loss, ensuring progress is not lost.
+
+- **EarlyStopping:** Halt the training if there is no improvement in validation loss for 50 epochs, preventing overfitting and saving computational resources.
+
+- **ReduceLROnPlateau:** Dynamically adjust the learning rate when the validation loss plateaus, facilitating more precise weight adjustments and aiding in avoiding local minima. These callbacks collectively ensure a more robust and effective training process.
 
 ## Run the hyperparameter search
 Perform hyperparameter tuning using Keras tuner's Random Search.
