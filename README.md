@@ -8,15 +8,7 @@ A repository for hyperparameter tuning using Keras tuner for the creation of a s
 - Dimitra-Eirini Diamantidou
   
 ## Dependencies
-- Python 3
-- TensorFlow
-- Keras
-- keras_tuner
-- numpy
-- matplotlib
-- seaborn
-- pandas
-- scikit-learn
+Python 3, TensorFlow, keras_tuner, numpy, matplotlib, pandas, scikit-learn
 
 ## Import libraries
 This section includes the necessary Python libraries for the project, including TensorFlow, Keras, and data preprocessing tools.
