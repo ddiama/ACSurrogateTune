@@ -1,8 +1,8 @@
 # AeroSurrogateTune
 
 ## Description
-A repository for hyperparameter tuning using Keras tuner for the creation of a surrogate model in the context of aircraft conceptual design. This code is associated with the work submitted in ASME Turbo Expo 2024, GT2024-127421 titled "Navigating Technological Risks: An Uncertainty Analysis Of Powertrain Technology In
-Hybrid-Electric Commuter Aircraft."
+A repository for hyperparameter tuning using Keras tuner for the creation of a surrogate model in the context of aircraft conceptual design. This code is associated with the work submitted in ASME Turbo Expo 2024, **GT2024-127421** titled **"Navigating Technological Risks: An Uncertainty Analysis Of Powertrain Technology In
+Hybrid-Electric Commuter Aircraft."**
 
 ## Authors
 - Jerol Soibam
