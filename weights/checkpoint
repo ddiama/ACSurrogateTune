@@ -1,0 +1,2 @@
+model_checkpoint_path: "hyperparameter_search"
+all_model_checkpoint_paths: "hyperparameter_search"
