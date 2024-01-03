@@ -1,7 +1,8 @@
 # AeroSurrogateTune
 
 ## Description
-A repository for hyperparameter tuning using Keras tuner for the creation of a surrogate model in the context of aircraft conceptual design.
+A repository for hyperparameter tuning using Keras tuner for the creation of a surrogate model in the context of aircraft conceptual design. This code is associated with the work submitted in ASME Turbo Expo 2024, GT2024-127421 titled "Navigating Technological Risks: An Uncertainty Analysis Of Powertrain Technology In
+Hybrid-Electric Commuter Aircraft."
 
 ## Authors
 - Jerol Soibam
@@ -12,7 +13,10 @@ Python 3, TensorFlow, keras_tuner, numpy, matplotlib, pandas, scikit-learn
 
 ## Notes 
 To monitor the results during training, Tensorboard can be used with the following command:
-tensorboard --logdir=random_search/tb1_logs
+
+- tensorboard --logdir=random_search/tb1_logs
+
+Screenshots from training can be found in the "Plots" folder.
 
 ## Import libraries
 This section includes the necessary Python libraries for the project, including TensorFlow, Keras, and data preprocessing tools.
@@ -39,7 +43,7 @@ Configure callbacks to enhance the model's performance and efficiency during the
 - **ReduceLROnPlateau:** Dynamically adjust the learning rate when the validation loss plateaus, facilitating more precise weight adjustments and aiding in avoiding local minima. These callbacks collectively ensure a more robust and effective training process.
 
 ## Run the hyperparameter search
-Perform hyperparameter tuning using Keras tuner's Random Search.
+Perform hyperparameter tuning using Keras tuner's Random Search. For this repository, 5 trials were ran to showcase its capabilities. However, a larger number of trials was performed for the publication. 
 
 ## Extract best hyperparameters and model
 Retrieve the best hyperparameters and the corresponding neural network model.
