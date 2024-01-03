@@ -9,7 +9,7 @@ Hybrid-Electric Commuter Aircraft."
 - Dimitra-Eirini Diamantidou
   
 ## Dependencies
-Python 3, TensorFlow, keras_tuner, numpy, matplotlib, pandas, scikit-learn
+Python 3, TensorFlow, keras_tuner, numpy, matplotlib, pandas, scikit-learn, seaborn
 
 ## Notes 
 To monitor the results during training, Tensorboard can be used with the following command:
