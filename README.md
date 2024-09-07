@@ -5,8 +5,8 @@ A repository for hyperparameter tuning using Keras tuner for the creation of a s
 Hybrid-Electric Commuter Aircraft."**
 
 ## Authors
-- Jerol Soibam
 - Dimitra-Eirini Diamantidou
+- Jerol Soibam
   
 ## Dependencies
 Python 3, TensorFlow, keras_tuner, numpy, matplotlib, pandas, scikit-learn, seaborn
